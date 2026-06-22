@@ -59,6 +59,18 @@ module.exports = {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
+  			},
+  			flatto: {
+  				green: '#B3ED54',
+  				'green-dark': '#8BC34A',
+  				blue: '#9FE2FA',
+  				'blue-dark': '#6EC6E6',
+  				orange: '#FF9F43',
+  				'orange-dark': '#E8872E',
+  				yellow: '#FFD93D',
+  				cream: '#FDFBF7',
+  				text: '#4A4A4A',
+  				'text-light': '#7A7A7A',
   			}
   		},
   		fontFamily: {
@@ -69,25 +81,32 @@ module.exports = {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
+  			},
+  			'bounce-soft': {
+  				'0%, 100%': { transform: 'scale(1)' },
+  				'50%': { transform: 'scale(1.05)' }
+  			},
+  			'float': {
+  				'0%, 100%': { transform: 'translateY(0)' },
+  				'50%': { transform: 'translateY(-8px)' }
+  			},
+  			'wiggle': {
+  				'0%, 100%': { transform: 'rotate(-2deg)' },
+  				'50%': { transform: 'rotate(2deg)' }
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'bounce-soft': 'bounce-soft 0.3s ease-in-out',
+  			'float': 'float 3s ease-in-out infinite',
+  			'wiggle': 'wiggle 2s ease-in-out infinite'
   		}
   	}
   },
