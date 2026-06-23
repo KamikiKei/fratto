@@ -170,6 +170,9 @@ export default function CircleSection() {
   );
 }
 
+/**
+ * @param {{ label: string; value: string }} props
+ */
 export function InfoRow({ label, value }) {
   return (
     <div>

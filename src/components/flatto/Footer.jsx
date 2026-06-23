@@ -1,6 +1,6 @@
 import React from "react";
 import { Twitter, Instagram } from "lucide-react";
-import footerLogo from "@/assets/footer-logo.png";
+import footerLogo from "./assets/footer-logo.png";
 export default function Footer() {
   return (
     <footer className="bg-flatto-text py-10">

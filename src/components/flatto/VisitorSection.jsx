@@ -108,11 +108,11 @@ export default function VisitorSection() {
           {/* Map Placeholder - Googleマップから埋め込みコードを取得して差し替えてください */}
           <div className="rounded-2xl overflow-hidden border border-flatto-green/20 bg-flatto-cream">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.1654765977582!2d140.3344519822693!3d38.257235411702275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bc9e28d65e78f%3A0xf3d12d57869c60b9!2z6aOf57On5Lya6aSo!5e1!3m2!1sja!2sjp!4v1782148552634!5m2!1sja!2sjp" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.1654765977582!2d140.3344519822693!3d38.257235411702275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bc9e28d65e78f%3A0xf3d12d57869c60b9!2z6aOf57On5Lya6aSo!5e1!3m2!1sja!2sjp!4v1782148552634!5m2!1sja!2sjp"
               width="100%"
               height="280"
               style={{ border: 0 }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="食糧会館マップ"
