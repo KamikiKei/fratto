@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare
+name: Deploy to Cloudflare Pages
 
 on:
   push:
@@ -23,7 +23,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Cloudflare with Wrangler
-        run: npx wrangler deploy --compatibility-date=2026-06-23
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: fratto
+          directory: dist
+          productionBranch: master

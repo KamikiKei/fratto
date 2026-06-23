@@ -1,8 +1,7 @@
 {
   "name": "fratto",
-  "compatibility_date": "2026-06-23",
+  "type": "javascript",
   "main": "src/index.ts",
-  "assets": {
-    "directory": "./dist"
-  }
+  "compatibility_date": "2026-06-23",
+  "pages_build_output_dir": "dist"
 }
