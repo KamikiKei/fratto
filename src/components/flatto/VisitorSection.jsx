@@ -12,7 +12,7 @@ const highlights = [
   {
     icon: Sparkles,
     title: "体験もいっぱい！",
-    desc: "学生企画の体験コーナーや展示など、見て・触れて・楽しめるお祭り空間！",
+    desc: "学生企画の体験コーナーや展示など、見て・触れて・楽しめる空間！",
     color: "bg-flatto-blue/15 text-flatto-blue-dark",
   },
   {

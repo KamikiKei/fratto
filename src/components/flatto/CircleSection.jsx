@@ -26,7 +26,7 @@ export default function CircleSection() {
             サークル参加の方へ ✏️
           </h2>
           <p className="mt-3 text-flatto-text-light font-heading text-base md:text-lg">
-            一緒にお祭りを盛り上げよう！
+            一緒に盛り上げよう！
           </p>
         </motion.div>
 
