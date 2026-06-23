@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 33% 97%;
+    --foreground: 0 0% 29%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 29%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 29%;
+    --primary: 88 79% 63%;
+    --primary-foreground: 0 0% 15%;
+    --secondary: 196 91% 80%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 48 20% 93%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 30 100% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 88 30% 82%;
+    --input: 88 30% 82%;
+    --ring: 88 79% 63%;
+    --chart-1: 88 79% 63%;
+    --chart-2: 196 91% 80%;
+    --chart-3: 30 100% 55%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 1rem;
+    --font-heading: 'Zen Maru Gothic', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Noto Sans JP', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Zen Maru Gothic', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
